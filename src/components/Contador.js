@@ -37,7 +37,7 @@ export default class Contador extends React.Component {
             segundo: this.state.segundo +1 ,
         });
     }
-
+    
     somar(){
         this.setState({
             resultado: (this.state.primeiro + this.state.segundo)
@@ -70,8 +70,9 @@ export default class Contador extends React.Component {
 
     render() {
         return (
-            <div>
-
+            <div className = "container">
+                <div style={{ margin: "0 auto"}}>
+                <h2> Primeiro Projeto em REACT </h2>
                 <h1> {this.state.primeiro} : {this.state.segundo} </h1>
                 <h2> Resultado: {this.state.resultado} </h2>
 
@@ -89,9 +90,11 @@ export default class Contador extends React.Component {
                 <button onClick= {this.subtrair.bind(this)} > - </button> <tab></tab>
                 <button onClick= {this.multiplicar.bind(this)} > * </button> <tab></tab>
                 <button onClick= {this.dividir.bind(this)} > / </button> <tab></tab>
+                <p>DIgitee aqui</p> <input type="text" placeholder="digite aqui" />
                 
-                               
+                     </div>          
             </div>
+
      
         );
     }
