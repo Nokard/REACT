@@ -67,11 +67,10 @@ export default class Contador extends React.Component {
             resultado: 0,
         })
     }
-
     render() {
         return (
             <div className = "container">
-                <div style={{ margin: "0 auto"}}>
+                
                 <h2> Primeiro Projeto em REACT </h2>
                 <h1> {this.state.primeiro} : {this.state.segundo} </h1>
                 <h2> Resultado: {this.state.resultado} </h2>
@@ -90,9 +89,9 @@ export default class Contador extends React.Component {
                 <button onClick= {this.subtrair.bind(this)} > - </button> <tab></tab>
                 <button onClick= {this.multiplicar.bind(this)} > * </button> <tab></tab>
                 <button onClick= {this.dividir.bind(this)} > / </button> <tab></tab>
-                <p>DIgitee aqui</p> <input type="text" placeholder="digite aqui" />
                 
-                     </div>          
+                
+                     
             </div>
 
      

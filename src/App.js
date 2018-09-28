@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import ReactDOM from 'react-dom';
+import AppContador from './components/AppContador';
 
-import Applic from './components/Applic';
+
 
 ReactDOM.render(
-
-  <Applic />,   
+  <AppContador />,
   document.getElementById("app")
 )
+
+
